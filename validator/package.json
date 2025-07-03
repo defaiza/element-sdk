@@ -1,0 +1,50 @@
+{
+  "name": "@defai/element-validator",
+  "version": "1.0.0",
+  "description": "Element validation tools for DEFAI platform",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "defai",
+    "elements",
+    "validation",
+    "security",
+    "quality"
+  ],
+  "author": "DEFAI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defaiza/element-sdk",
+    "directory": "packages/validator"
+  },
+  "dependencies": {
+    "@defai/element-types": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.0.0",
+    "jest": "^29.4.0",
+    "ts-jest": "^29.0.5",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "@defai/element-sdk": "^1.0.0"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "@defai/element-types",
+  "version": "1.0.0",
+  "description": "TypeScript type definitions for DEFAI elements",
+  "types": "index.d.ts",
+  "files": [
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "echo 'Type definitions only, no build required'",
+    "test": "tsc --noEmit"
+  },
+  "keywords": [
+    "defai",
+    "elements",
+    "types",
+    "typescript",
+    "definitions"
+  ],
+  "author": "DEFAI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defaiza/element-sdk",
+    "directory": "packages/types"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

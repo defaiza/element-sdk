@@ -1,0 +1,47 @@
+{
+  "name": "@defai/element-react",
+  "version": "1.0.0",
+  "description": "React hooks and components for DEFAI elements",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src --ext .ts,.tsx",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "defai",
+    "element",
+    "react",
+    "hooks"
+  ],
+  "author": "DEFAI Team",
+  "license": "MIT",
+  "peerDependencies": {
+    "@defai/element-sdk": "^1.0.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@defai/element-sdk": "1.0.0",
+    "@defai/element-types": "^1.0.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defaiza/element-sdk"
+  }
+}

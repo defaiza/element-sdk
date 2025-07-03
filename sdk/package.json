@@ -1,0 +1,74 @@
+{
+  "name": "@defai/element-sdk",
+  "version": "1.0.0",
+  "description": "Core SDK for building DEFAI elements",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest --passWithNoTests",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "defai",
+    "elements",
+    "sdk",
+    "blockchain",
+    "solana",
+    "defi"
+  ],
+  "author": "DEFAI Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defaiza/element-sdk",
+    "directory": "packages/sdk"
+  },
+  "homepage": "https://docs.defai.com/elements",
+  "bugs": {
+    "url": "https://github.com/defaiza/element-sdk/issues"
+  },
+  "dependencies": {
+    "eventemitter3": "^5.0.0",
+    "uuid": "^9.0.0",
+    "events": "^3.3.0"
+  },
+  "peerDependencies": {
+    "@solana/web3.js": "^1.x",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@defai/element-types": "^1.0.0",
+    "@types/jest": "^29.2.5",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/uuid": "^9.0.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

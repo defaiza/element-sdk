@@ -1,0 +1,28 @@
+{
+  "version": "1.0.0",
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "registry": "https://registry.npmjs.org",
+      "access": "public"
+    },
+    "version": {
+      "allowBranch": ["main", "release/*"],
+      "conventionalCommits": true,
+      "createRelease": "github",
+      "exact": true,
+      "message": "chore(release): %s"
+    }
+  },
+  "packages": [
+    "sdk",
+    "cli", 
+    "react",
+    "types",
+    "templates",
+    "validator",
+    "testing"
+  ]
+}
