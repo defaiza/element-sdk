@@ -2,6 +2,7 @@
  * ElementEventEmitter
  * Enhanced event emitter for elements
  */
+/// <reference types="node" />
 import { EventEmitter } from 'events';
 export declare class ElementEventEmitter extends EventEmitter {
     private eventHistory;

@@ -3,7 +3,7 @@
  * Mock context for testing elements
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.createMockContext = createMockContext;
+exports.createMockContext = void 0;
 function createMockContext(overrides) {
     const mockAPI = {
         getPortfolio: async () => [
@@ -104,3 +104,4 @@ function createMockContext(overrides) {
         ...overrides
     };
 }
+exports.createMockContext = createMockContext;

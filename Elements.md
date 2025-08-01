@@ -626,10 +626,10 @@ describe('TradingBot', () => {
 
 ### Getting Help
 
-- **📖 Documentation** - [docs.defai.com/elements](https://docs.defai.com/elements)
+- **📖 Documentation** - [docs.defai.com/elements](https://defai.gg/dev)
 - **💬 Discord Community** - [discord.gg/defai](https://discord.gg/defai)
 - **🐛 GitHub Issues** - [github.com/defaiza/element-sdk/issues](https://github.com/defaiza/element-sdk/issues)
-- **📧 Developer Support** - developers@defai.com
+- **📧 Developer Support** - dev@defai.gg
 
 ### Contributing
 
@@ -670,9 +670,10 @@ defai-element publish --tier bronze --price 100
 <div align="center">
   <p><strong>Made with ❤️ by the DEFAI Community</strong></p>
   <p>
-    <a href="https://defai.com">Website</a> • 
-    <a href="https://docs.defai.com">Docs</a> • 
+    <a href="https://defai.gg">Website</a> • 
+    <a href="https://defai.gg/dev">Docs</a> • 
     <a href="https://discord.gg/defai">Discord</a> • 
+    <a href="https://t.me/defai_gg>">Telegram</a> • 
     <a href="https://twitter.com/defaiza">Twitter</a>
   </p>
 </div> 

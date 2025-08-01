@@ -1,0 +1,64 @@
+{
+  "name": "@defai/element-cli",
+  "version": "1.0.0",
+  "description": "Command-line interface for developing DEFAI elements",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "bin": {
+    "defai-element": "./bin/defai-element.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "defai",
+    "cli",
+    "element",
+    "development",
+    "blockchain"
+  ],
+  "author": "DEFAI Team",
+  "license": "MIT",
+  "dependencies": {
+    "@defai/element-sdk": "^1.0.0",
+    "@defai/element-validator": "^1.0.0",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "chalk": "^4.1.2",
+    "commander": "^9.4.1",
+    "css-loader": "^6.7.2",
+    "express": "^4.18.2",
+    "fs-extra": "^11.1.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ora": "^5.4.1",
+    "react-refresh": "^0.14.0",
+    "semver": "^7.3.8",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0",
+    "webpack": "^5.75.0",
+    "webpack-bundle-analyzer": "^4.7.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.11.18",
+    "@types/semver": "^7.3.13",
+    "@types/webpack": "^5.28.5",
+    "@types/webpack-bundle-analyzer": "^4.7.0",
+    "eslint": "^8.31.0",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.5"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

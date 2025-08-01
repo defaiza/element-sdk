@@ -2,6 +2,7 @@
  * DefaiElement base class
  * All elements must extend this class
  */
+/// <reference types="node" />
 import { EventEmitter } from 'events';
 import { ElementMetadata, ElementPermissions, ElementContext, ElementSize, ElementState, ElementSettings } from '../interfaces';
 export declare abstract class DefaiElement extends EventEmitter {
